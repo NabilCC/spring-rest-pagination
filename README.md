@@ -30,3 +30,7 @@ MongoDB must be installed and running on port 27017
 * Get the first page of size = 20
 
 `curl http://localhost:8080/customer?page=1&size=20`
+
+* Get the first page, sorting by id (API default behaviour is to sort by name)
+
+`curl http://localhost:8080/customer?page=0&size=5&sort=id`
