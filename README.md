@@ -1,6 +1,10 @@
 # spring-rest-pagination
 Demonstrates how to implement pagination for a Spring Boot REST API, running against a Mongo database.
 
+## Pre-requisites
+
+MongoDB must be installed and running on port 27017
+
 ## Usage Guidelines 
 
 * Clone this repository 
