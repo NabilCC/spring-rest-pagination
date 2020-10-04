@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version "$springBootVersion"
+    id 'org.springframework.boot' version "2.3.4.RELEASE"
 }
 
 sourceCompatibility = JavaVersion.VERSION_11
@@ -10,9 +10,8 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-hateoas', version: springBootVersion
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "2.3.4.RELEASE"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: "2.3.4.RELEASE"
     compile group: 'org.projectlombok', name: 'lombok', version: "1.18.12"
     annotationProcessor group: 'org.projectlombok', name: 'lombok', version: "1.18.12"
 }
