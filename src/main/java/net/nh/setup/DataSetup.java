@@ -36,6 +36,8 @@ public class DataSetup implements InitializingBean, DisposableBean {
     public void afterPropertiesSet() throws Exception {
         log.info("Initialising Mongo data");
 
+        customerRepository.deleteAll();
+
         List<Customer> toCreate = new ArrayList<>(50);
 
         toCreate.add(Customer.builder().id(++customerIdSequence).country("England").name("Joel Ward").build());
